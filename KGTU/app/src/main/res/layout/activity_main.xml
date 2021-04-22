@@ -13,13 +13,33 @@
         app:layout_constraintBottom_toTopOf="@+id/btApprove"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvFio" />
 
     <Button
         android:id="@+id/btApprove"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Потдтвердить"
+        android:text="Подтвердить"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="157dp" />
+
+    <TextView
+        android:id="@+id/tvFio"
+        android:layout_width="0dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="ФИО студента"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tvPresent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPresent"
+        android:layout_width="125dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="На занятии?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
